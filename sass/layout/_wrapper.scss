@@ -1,0 +1,11 @@
+#wrapper {
+  background-color: $wrapper-bg-color;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-in-out;
+  width: 100%;
+}
+
+#wrapper.animate {
+  transform: scale(.8) translateY(50px) rotateX(10deg);
+}

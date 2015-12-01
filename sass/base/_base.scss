@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: $body-bg-color;
+  height: 100%;
+  perspective: 500px;
+  perspective-origin: 50% 50%;
+  position: absolute;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
