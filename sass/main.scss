@@ -1,8 +1,10 @@
 @import 'utils/variables';
 
-@import 'vendors/ample',
-        'vendors/sanitize';
+@import 'vendors/sanitize',
+        'vendors/ample';
 
 @import 'base/base';
 
 @import 'layout/wrapper';
+
+@import 'components/hamburger';

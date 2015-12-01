@@ -1,0 +1,36 @@
+.hamburger {
+  cursor: pointer;
+  margin: 1em 0 3em 1em;
+  width: 30px;
+
+  span {
+    background-color: $color-black;
+    border-radius: 5px;
+    display: block;
+    height: 5px;
+    margin-bottom: 4px;
+    transition: all .2s ease-in-out;
+  }
+
+  span:first-of-type {
+    transform-origin: 0% 0%;
+  }
+
+  span:last-of-type {
+    transform-origin: 0% 100%;
+  }
+
+  &.active {
+    span:first-of-type {
+      transform: rotate(45deg) translate(-2px, -1px);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:last-of-type {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+  }
+}
