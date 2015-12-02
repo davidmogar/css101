@@ -1,0 +1,32 @@
+nav {
+  left: -20em;
+  position: fixed;
+  top: calc(50% - 12em);
+  transition: transform .5s ease-in-out;
+  transition-delay: .3s; // Wait for the wrapper animation
+
+  li {
+    background-color: $color-white;
+    border-radius: 500px;
+    height: 6em;
+    margin: 1em 0;
+    opacity: .7;
+    padding: 1em;
+    width: 6em;
+  }
+
+  &.animate {
+    animation: float 1s infinite alternate;
+    animation-delay: 1s;
+    transform: translateX(22em);
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translate(22em, 0);
+  }
+  to {
+    transform: translate(22em, 1em);
+  }
+}

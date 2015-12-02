@@ -5,6 +5,7 @@
 
 @import 'base/base';
 
-@import 'layout/wrapper';
+@import 'layout/nav',
+        'layout/wrapper';
 
 @import 'components/hamburger';

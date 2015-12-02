@@ -4,10 +4,10 @@ html {
 
 html,
 body {
-  background-color: $body-bg-color;
+  background: linear-gradient(to right, $color-green, $color-blue);
   height: 100%;
   perspective: 500px;
-  perspective-origin: 70% 100%;
+  perspective-origin: 75% 100%;
   position: absolute;
   width: 100%;
 }
