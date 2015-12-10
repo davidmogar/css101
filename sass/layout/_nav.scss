@@ -1,32 +1,33 @@
 nav {
-  left: -20em;
+  bottom: 0;
+  left: -$menu-items-width;
   position: fixed;
-  top: calc(50% - 12em);
-  transition: transform .5s ease-in-out;
-  transition-delay: .3s; // Wait for the wrapper animation
+  top: 0;
+  transition: all .5s ease-in-out;
+  width: $menu-items-width;
 
-  li {
-    background-color: $color-white;
-    border-radius: 500px;
-    height: 6em;
-    margin: 1em 0;
-    opacity: .7;
-    padding: 1em;
-    width: 6em;
+  &.menu-visible {
+    transform: translateX($menu-items-width);
   }
 
-  &.animate {
-    animation: float 1s infinite alternate;
-    animation-delay: 1s;
-    transform: translateX(22em);
-  }
-}
+  ul {
+    height: 100%;
+    margin: 0;
+    padding-left: 0;
 
-@keyframes float {
-  from {
-    transform: translate(22em, 0);
-  }
-  to {
-    transform: translate(22em, 1em);
+    li {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      height: 100% / $menu-items;
+      justify-content: center;
+      list-style: none;
+
+      @for $i from 1 through $menu-items {
+        &:nth-child(#{$i}) {
+          background-color: nth($colors-menu-items, $i);
+        }
+      }
+    }
   }
 }

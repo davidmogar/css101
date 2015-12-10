@@ -1,9 +1,11 @@
-@import 'utils/variables';
+@import 'utils/helpers',
+        'utils/variables';
 
 @import 'vendors/sanitize',
         'vendors/ample';
 
-@import 'base/base';
+@import 'base/base',
+        'base/typography';
 
 @import 'layout/nav',
         'layout/wrapper';

@@ -1,10 +1,13 @@
 .hamburger {
   cursor: pointer;
+  left: 1em;
   margin: 1em 0 3em 1em;
+  position: absolute;
+  top: 1em;
   width: 30px;
 
   span {
-    background-color: $color-black;
+    background-color: $color-text;
     border-radius: 5px;
     display: block;
     height: 5px;

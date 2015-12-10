@@ -1,15 +1,17 @@
-#wrapper {
-  background-color: $wrapper-bg-color;
-  box-shadow: 0px 0px 500px rgba(0,0,0,0.75);
-  height: 100%;
-  outline: 20px dashed $color-green;
-  outline-offset: 20px;
-  position: absolute;
-  transition: transform .5s ease-in-out;
-  transition-delay: .1s; // Wait for the hamburger animation
-  width: 100%;
-}
+.wrapper {
+  padding: 4em 1em 1em 1em;
+  position: relative;
+  transition: all .5s ease-in-out;
 
-#wrapper.animate {
-  transform: scale(.3) translateX(90%) rotateX(10deg) rotate(40deg);
+  &.menu-visible {
+    transform: translateX($menu-items-width);
+  }
+
+  .cell {
+    padding: 1em;
+  }
+
+  h1 {
+    text-align: center;
+  }
 }

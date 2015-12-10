@@ -4,16 +4,17 @@ html {
 
 html,
 body {
-  background: linear-gradient(to right, $color-green, $color-blue);
-  height: 100%;
-  perspective: 500px;
-  perspective-origin: 75% 100%;
-  position: absolute;
-  width: 100%;
+  overflow-x: hidden;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
 }
