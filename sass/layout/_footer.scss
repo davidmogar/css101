@@ -1,0 +1,11 @@
+footer {
+  background-color: $color-bg-footer;
+  color: $color-text-footer;
+  padding: 1em;
+  text-align: center;
+  
+  span {
+    color: $color-heart;
+    font-size: 1.5em;
+  }
+}
