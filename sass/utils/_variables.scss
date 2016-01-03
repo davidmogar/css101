@@ -1,5 +1,20 @@
+$color-bg-footer: #333;
+$color-bg-price: #FFAAA6;
+
+$color-heart: #dc2929;
 $color-text: #333;
-$colors-menu-items: #68b3af #87bdb1 #aaccb1 #c3dbb4 #d3e2b6;
+$color-text-footer: #fff;
+$colors-menu-items: #FF8C94 #FFAAA6 #FFD3B5 #DCEDC2 #A8E6CE;
 
 $menu-items: 5;
+$menu-items-height: 5em;
 $menu-items-width: 15em;
+
+/* Media queries */
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen: 1200px;
+
+$small-devices: "only screen and (max-width: #{$small-screen})";
+$medium-devices: "only screen and (max-width: #{$medium-screen})";
+$large-devices: "only screen and (max-width: #{$large-screen})";

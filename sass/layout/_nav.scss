@@ -31,3 +31,22 @@ nav {
     }
   }
 }
+
+@media #{$small-devices} {
+  nav {
+    left: 0;
+    right: 0;
+    top: -$menu-items-height * $menu-items;
+    width: auto;
+
+    &.menu-visible {
+      transform: translateY($menu-items-height * $menu-items);
+    }
+
+    ul {
+      li {
+        height: $menu-items-height;
+      }
+    }
+  }
+}

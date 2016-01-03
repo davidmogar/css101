@@ -15,3 +15,11 @@
     text-align: center;
   }
 }
+
+@media #{$small-devices} {
+  .wrapper {
+    &.menu-visible {
+      transform: translateY($menu-items-height * $menu-items);
+    }
+  }
+}

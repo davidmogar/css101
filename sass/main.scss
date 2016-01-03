@@ -7,7 +7,9 @@
 @import 'base/base',
         'base/typography';
 
-@import 'layout/nav',
+@import 'layout/footer',
+        'layout/items',
+        'layout/nav',
         'layout/wrapper';
 
 @import 'components/hamburger';
