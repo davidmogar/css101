@@ -14,3 +14,15 @@
     top: 0;
   }
 }
+
+@media #{$medium-devices} {
+  .four.wide.cell {
+    width: 50%;
+  }
+}
+
+@media #{$small-devices} {
+  .four.wide.cell {
+    width: 100%;
+  }
+}

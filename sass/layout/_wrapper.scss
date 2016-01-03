@@ -1,7 +1,9 @@
 .wrapper {
-  padding: 4em 1em 1em 1em;
+  background-color: $color-bg-wrapper;
+  padding: 4em 1em 1em;
   position: relative;
   transition: all .5s ease-in-out;
+  z-index: 100;
 
   &.menu-visible {
     transform: translateX($menu-items-width);
@@ -13,6 +15,14 @@
 
   h1 {
     text-align: center;
+  }
+}
+
+@media #{$medium-devices} {
+  .wrapper {
+    &.menu-visible {
+      transform: translateY($menu-items-height * ceil($menu-items / 2));
+    }
   }
 }
 

@@ -32,21 +32,32 @@ nav {
   }
 }
 
-@media #{$small-devices} {
+@media #{$medium-devices} {
   nav {
     left: 0;
     right: 0;
-    top: -$menu-items-height * $menu-items;
+    top: 0;
     width: auto;
 
     &.menu-visible {
-      transform: translateY($menu-items-height * $menu-items);
+      transform: none;
     }
 
-    ul {
-      li {
-        height: $menu-items-height;
+    ul li {
+      float: left;
+      height: $menu-items-height;
+      width: 50%;
+
+      &:last-child {
+        width: 100%;
       }
     }
+  }
+}
+
+@media #{$small-devices} {
+  nav ul li {
+    float: none;
+    width: 100%;
   }
 }
